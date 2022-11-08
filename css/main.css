@@ -477,10 +477,12 @@ img {
   }
 }
 
-.header__container {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 1199px) {
+  .header__container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .navigation__logo {

@@ -16,9 +16,11 @@
 }
 
 .header__container {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
+    @media screen and (max-width: 1199px) {
+        width: 100vw;
+            display: flex;
+            justify-content: space-between;
+    }
 }
 
 .navigation__logo {
