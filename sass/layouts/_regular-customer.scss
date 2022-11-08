@@ -1,12 +1,13 @@
 .regular-customers-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
 .regular-customers-link {
-    width: 170px;
     height: 92px;
+
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     @extend %align-elements;
@@ -24,4 +25,17 @@
 
 .regular-customers-icon {
     fill: currentColor;
+}
+
+.regular-customers-item {
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
+
 }

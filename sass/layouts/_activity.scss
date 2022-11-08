@@ -1,13 +1,10 @@
 .activity {
     padding-bottom: 94px;
-}
+    display: none;
 
-.activity__title,
-.team-title,
-.regular-customers-title {
-    margin-bottom: 50px;
-    @include font(700, 36px, 1.17, center, 0.03em);
-    color: var(--title-color);
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
 }
 
 .activity-list {

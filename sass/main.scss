@@ -5,10 +5,12 @@
 @import './base/common';
 @import './utils/hidden';
 
+@import './components/title';
 @import './components/btn';
 @import './components/container';
 @import './components/section';
 @import './components/modal';
+@import './components/mob-menu';
 
 @import './layouts/header';
 @import './layouts/hero';

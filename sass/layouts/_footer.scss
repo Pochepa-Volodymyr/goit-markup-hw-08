@@ -4,7 +4,23 @@
     background-color: var(--hero-footer-background-color);
 }
 
+.footer-address-content {
+    text-align: center;
 
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 91px;
+        text-align: left;
+    }
+
+}
 
 .footer-logo {
     @include font(700, 26px, var(--typical-lh), null, 0.03em);
@@ -59,10 +75,36 @@
 
 .footer-container {
     @extend %align-elements;
-    gap: 91px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    overflow: auto;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 91px;
+    }
+}
+
+.footer-connection {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
 }
 
 .invitation-title {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -92,9 +134,20 @@
 }
 
 .invitation-list {
-    justify-content: center;
     gap: 10px;
     display: flex;
+}
+
+.mailing {
+    align-items: baseline;
+}
+
+.mailing-field {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .mailing-label {
@@ -107,12 +160,22 @@
 .mailing-input-wrap {
     padding-top: 20px;
     align-items: center;
-    text-align: center;
 }
 
 .mailing-input {
-    margin-right: 12px;
-    width: 358px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-right: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        display: inline;
+    }
+
+    margin-bottom: 20px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

@@ -1,10 +1,21 @@
 .description-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .description-list__item {
-    min-width: 270px;
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 90px) / 4);
+        ;
+    }
+
 
     &::before {
         display: block;
@@ -37,7 +48,8 @@
 
 .description-list__title {
     margin-bottom: 10px;
-    
+    text-align: center;
+
     @include font(700, 14px, 1.14, null, 0.03em);
 
     text-transform: uppercase;

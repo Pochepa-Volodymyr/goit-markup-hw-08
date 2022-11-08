@@ -1,0 +1,124 @@
+.menu-open-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 48px 40px 65px;
+    transform: translate(0%, 0%) scale(1);
+
+    >.container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    z-index: 1;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate(50%, -50%) scale(0);
+    }
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 34px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
+        color: #212121;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--hover-color);
+        }
+    }
+}
+
+.menu-close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.mob-connect {
+    margin-bottom: 64px;
+
+    &-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        display: block;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
+        color: #757575;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--hover-color);
+        }
+    }
+}
+
+.mob-soc-list {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.mob-soc-item {
+    display: inline-flex;
+    margin-bottom: 15px;
+
+    &:not(:last-child)::after {
+        content: "";
+        width: 1px;
+        height: 22px;
+        background-color: rgba(33, 33, 33, 0.2);
+        align-items: center;
+        margin: 0 10px;
+    }
+}
+
+.mob-soc-link {
+    color: #2196F3;
+}

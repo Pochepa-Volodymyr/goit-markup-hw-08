@@ -1,7 +1,18 @@
 .portfolio-top-list {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
+
     gap: 8px;
 }
 
@@ -12,8 +23,17 @@
 }
 
 .portfolio-item {
-    display: flex;
-    width: calc((100% - 60px) / 3);
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        width: calc((100% - 60px) / 3);
+        ;
+    }
 
     &:hover,
     &:focus {
@@ -47,7 +67,7 @@
 
 
 .portfolio-button {
-    padding: 6px 22px;
+    padding: 6px 25px;
 
     font-family: inherit;
     @include font(500, 16px, 1.62, center, 0.03em);
