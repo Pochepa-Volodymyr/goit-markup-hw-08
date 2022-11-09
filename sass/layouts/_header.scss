@@ -1,6 +1,11 @@
 .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 24px;
@@ -15,17 +20,13 @@
     @extend %align-elements;
 }
 
-.header__container {
-    @media screen and (max-width: 1199px) {
-        width: 100vw;
-            display: flex;
-            justify-content: space-between;
-    }
-}
-
 .navigation__logo {
     font-family: var(--main-font);
-    margin-right: 88px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+
     @include font(700, 24px, 1.17, null, 0.03em);
 
     @media screen and (min-width: 1200px) {
