@@ -471,8 +471,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -528,7 +528,7 @@ img {
   position: absolute;
   display: block;
   left: 0;
-  top: 43px;
+  top: 46px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -599,9 +599,23 @@ img {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .connect-phone__icon {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-mail__icon {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 .hero {
   background-color: var(--hero-footer-background-color);
-  height: 600px;
+  height: 400px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -609,9 +623,14 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -636,6 +655,12 @@ img {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--bg-gradient), url(../images/hero-bg-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -733,6 +758,11 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
 }
+@media screen and (min-width: 768px) {
+  .description-list__title {
+    text-align: left;
+  }
+}
 
 .description-list__text {
   font-size: 14px;
@@ -749,6 +779,15 @@ img {
   .activity {
     display: block;
   }
+}
+
+.activity__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .activity-list {
@@ -780,6 +819,23 @@ img {
 
 .team {
   background: var(--team-background-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .team-list {
@@ -850,6 +906,23 @@ img {
 
 .team-soc-icon {
   fill: currentColor;
+}
+
+.regular-customers-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .regular-customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .regular-customers-list {
@@ -1071,6 +1144,7 @@ img {
   .mailing-input {
     width: 450px;
     margin-right: 12px;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {

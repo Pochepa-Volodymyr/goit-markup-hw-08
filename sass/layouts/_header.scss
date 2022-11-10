@@ -3,8 +3,8 @@
     padding-bottom: 10px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 26px;
-        padding-bottom: 26px;
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -61,7 +61,8 @@
         position: absolute;
         display: block;
         left: 0;
-        top: 43px;
+        top: 46px;
+        
 
         @media screen and (min-width: 1200px) {
             top: 47px;
@@ -127,4 +128,18 @@
 .connect__icon {
     fill: currentColor;
     margin-right: 10px;
+}
+
+.connect-phone__icon {
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+.connect-mail__icon {
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
 }

@@ -2,6 +2,13 @@
     background: var(--team-background-color);
 }
 
+.team-title {
+    @include font(700, 28px, 1.18, center, 0.03em);
+    @media screen and (min-width: 1200px) {
+        @include font(700, 36px, 1.17, center, 0.03em);
+    }
+}
+
 .team-list {
     display: flex;
     flex-wrap: wrap;
